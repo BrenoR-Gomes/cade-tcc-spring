@@ -43,14 +43,16 @@ public class AdmController {
 		
 
 		//GET
-		//@GetMapping("/logar/{nome}/{senha}")
-		@PostMapping("/logar")
+		
+//		@PostMapping("/logar")
 		//@ResponseBody
-		public ResponseEntity<Object> logar(@RequestBody Object corpo) {
-			System.out.println("dados: " + corpo.nome + "  " + corpo.senha);
+		@GetMapping("/logar")
+		@ResponseBody
+		public ResponseEntity<Object> logar(@RequestParam(name="nome") String nome, @RequestParam String senha) {
+			System.out.println("dados: " + nome + "  " + senha);
 			
 			//adm.setNome(admService.findAdm(nome, senha));
-			String teste = admService.findAdm(corpo.nome, corpo.senha);
+			String teste = admService.findAdm(nome, senha);
 			String[] parcial = teste.split(",");
 			Adm adm = new Adm(Long.parseLong(parcial[0]), parcial[1], parcial[2], parcial[3]);
 			System.out.println(adm.getNome());
