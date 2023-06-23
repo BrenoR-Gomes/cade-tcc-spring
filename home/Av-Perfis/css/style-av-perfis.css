@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 12vh;
+    background-image: linear-gradient(to bottom, #ffbb6e, #ffe791 );
+    display: flex;
+    padding: 10px 15px 10px 6.3vw;
+    /* paddin = cima direita baixo esquerda */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ic-logo {
+    height: 8vh;
+}
+
+.ic-user {
+    height: 8vh;
+}
+
+.ic-opcoes {
+    height: 8vh;
+    display: none;
+}
+
+.page {
+    width: 100vw;
+    height: 88vh;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.side-bar {
+    background-color: #ffe791 ;
+    height:100%;
+    width: 17%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcoes > a {
+    margin: 20px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.opcoes > a > h3 {
+    margin: 20px 0;
+    color: black;
+}
+
+.opcoes > a:hover {
+    text-decoration: underline solid 2px;
+    font-size: 17px;
+    transition: 0.2s;   
+}
+
+.page-itens {
+    height: 100%;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-color: #ffe791;
+}
+
+.title > h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.perfil-brecho {
+    width: 75%;
+    height: 18%;
+    padding: 5px;
+    background-color: white;
+    border: 5px solid #ccb675;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.perfil-brecho:hover {
+    cursor: pointer;
+}
+
+.img-perfil-brecho {
+    height: 95%;
+    width: 20%; 
+}
+
+.img-perfil-brecho >img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-info-brecho {
+    height: 95%;
+    width: 60%;
+    margin: 0 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-brecho {
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    overflow: hidden; /* oculta conteúdo que excede a div */
+    white-space: nowrap;
+}
+
+.func-brecho {
+    width: 100%;
+    font-size: 11px;
+    overflow: hidden; /* oculta conteúdo que excede a div */
+    white-space: nowrap;
+}
+
+.location-brecho{
+    width: 100%;
+    font-size: 11px;
+    overflow: hidden; /* oculta conteúdo que excede a div */
+    white-space: nowrap;
+}
+
+.verific-brecho {
+    height: 95%;
+    width: 20%;
+    display: flex;
+}
+
+.acept-brecho {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recuse-brecho {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-Ic {
+    height: 60%;
+    cursor: pointer;
+}
+
+.popup {
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    position: absolute;
+    height: 35%;
+    width: 30%;
+    border-radius: 20px;
+    background: white;
+    border: #ffbb6e solid 6px;
+}
+
+.title-alert {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-alert {
+    height: 40;
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.btn-alert {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-alert > input {
+    width: 30%;
+    height: 80%;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-alert > input:hover {
+    cursor: pointer;
+}
+
+/* .msg-alert>h3 , .title-alert>h1 {
+    color: white;
+} */
+
+#btn_teste {
+    width: 40px;
+    height: 30px;
+}

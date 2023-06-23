@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 12vh;
+    background-image: linear-gradient(to bottom, #ffbb6e, #ffe791 );
+    display: flex;
+    padding: 10px 15px 10px 6.3vw;
+    /* paddin = cima direita baixo esquerda */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ic-logo {
+    height: 8vh;
+}
+
+.ic-user {
+    height: 8vh;
+}
+
+.ic-opcoes {
+    height: 8vh;
+    display: none;
+}
+
+.page {
+    width: 100vw;
+    height: 88vh;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.side-bar {
+    background-color: #ffe791 ;
+    height:100%;
+    width: 17%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcoes > a {
+    margin: 20px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.opcoes > a > h3 {
+    margin: 20px 0;
+    color: black;
+}
+
+.opcoes > a:hover {
+    text-decoration: underline solid 2px;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.page-itens {
+    height: 100%;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-color: #ffe791;
+}
+
+.img-grade {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.img-grade:hover {
+    cursor: pointer;
+}
+
+
