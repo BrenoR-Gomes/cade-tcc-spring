@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-login.css">
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+
+    <title>Garimpei.com.br</title>
+</head>
+    <body>
+        <div class="main-login">
+            <div class="left-login">
+                <img class="img-login" src="../img/left-login.png" alt="">
+            </div>
+            <form method="A" class="right-login" method="post">
+                <!-- <form class="form-login" action=""> -->
+                    <div class="card-login">
+                    <h1>Login</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input id="user_input" type="text" name="nome" placeholder="Usuário" maxlength="36" required>
+                    </div>
+                    <div class="textfield eye-pos">
+                        <label for="senha">Senha</label>
+                        <input id="password_input" type="password" id="senha" name="senha" placeholder="Senha" maxlength="30" required>
+                        <img id="eye-Ic" src="../img/open-eye.svg" alt="olho que revela senha" onclick="eyeClick()" >
+                        <!-- <i id="eye-Ic" class="fa-regular fa-eye fa-xl" onclick() ></i> -->
+                        <!-- <i id="close-eye" class="fa-regular fa-eye-slash fa-xl"></i> -->
+                    </div>
+                    <div>
+                    <p>
+        <a href="/src/main/resources/cadastro/html/cadastro.html" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Criar conta</a></p>
+
+                    </div>
+                    <p id="errorMsg" hidden>#Usuario ou senha inválida</p>
+                    <a id="btn-log" class="a-btn" href="#">
+                        <button onclick="error(error);validateLogin()" class="btn-login"  id="btn-log" type="button" value="login">Login</button>
+                    </a>
+                    <!-- olhe o botao quando estiver com defeito -->
+                </div>
+            <!-- </form> -->
+            </form>
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="https://kit.fontawesome.com/cdbb067da2.js" crossorigin="anonymous"></script>
+    </body>
+</html>

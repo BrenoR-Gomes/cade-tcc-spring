@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style-cadastro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    
+</head>
+<body>
+        <div>
+            <img  src="../images/left-login.png" alt="">
+        
+    </div>
+    <div class="box">
+        <form id="cadastro" action="http://localhost:8080/Adm" method="post">
+            <fieldset>
+                <legend><b>Cadastro</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" id="usuario" name="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Usuário</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text"  id="email" name="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password"  id="senha" name="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">senha</label>
+                </div>
+                <p>
+                    <a href="/src/main/resources/login/html/login.html" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Já tenho conta</a>
+                </p>
+                <br><br>
+                <input type="submit" name="submit" id="submit" >
+            </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
